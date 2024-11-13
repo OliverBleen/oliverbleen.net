@@ -3,6 +3,32 @@
 <!-- I see you're looking at the code! Nice :3 -->
 <!-- Look at the HTML for the Home page for a bit more text ^w^ -->
 
+<?php
+  session_start();
+  $counter_name = '/home/WH540322993/wwwroot/VisitsCounter-AdLinks.txt';
+
+  // Check if a text file exists. If not create one and initialize it to zero.
+  if (!file_exists($counter_name)) {
+    $f = fopen($counter_name, "w");
+    fwrite($f,"0");
+    fclose($f);
+  }
+
+  // Read the current value of our counter file
+  $f = fopen($counter_name,"r");
+  $counterVal = fread($f, filesize($counter_name));
+  fclose($f);
+
+  // Increment counter value by one
+  if(empty($_SESSION['visited'])){
+    $counterVal++;
+    $f = fopen($counter_name, "w");
+    fwrite($f, $counterVal);
+    fclose($f);
+  }
+  $_SESSION['visited'] = true;
+?>
+
 <html>
   <head>
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">

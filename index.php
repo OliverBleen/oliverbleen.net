@@ -6,6 +6,32 @@
 <!-- Also, I am way more comfortable with writing back-end code, so making this as pretty as it is was quite a challenge for me >w< Please don't be too mean if anything breaks down x3 -->
 <!-- Well, I don't think I have anything more to say, thanks for reading this. Here, have a cookie:  🍪 -->
 
+<?php
+  session_start();
+  $counter_name = '/home/WH540322993/wwwroot/VisitsCounter-Index.txt';
+
+  // Check if a text file exists. If not create one and initialize it to zero.
+  if (!file_exists($counter_name)) {
+    $f = fopen($counter_name, "w");
+    fwrite($f,"0");
+    fclose($f);
+  }
+
+  // Read the current value of our counter file
+  $f = fopen($counter_name,"r");
+  $counterVal = fread($f, filesize($counter_name));
+  fclose($f);
+
+  // Increment counter value by one
+  if(empty($_SESSION['visited'])){
+    $counterVal++;
+    $f = fopen($counter_name, "w");
+    fwrite($f, $counterVal);
+    fclose($f);
+  }
+  $_SESSION['visited'] = true;
+?>
+
 <html>
   <head>
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
@@ -43,7 +69,7 @@
 
     <!-- Footer -->
     <div class="footer">
-      <p>Website v1.2.1</p>
+      <p>Website v1.3.0</p>
     </div>
   </body>
 </html>
