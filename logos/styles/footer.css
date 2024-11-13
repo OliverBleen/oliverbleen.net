@@ -1,0 +1,20 @@
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+.footer p{
+    font-family: Arial;
+    font-size: 18px;
+    padding: 5px;
+}
+
+@media (max-width: 1100px) or (max-height: 600px){
+    .footer p{
+        font-size: 12px;
+    }
+}
