@@ -41,7 +41,8 @@ body{
     position: absolute;
     text-align: center;
     font-family: Arial;
-    top: 50px
+    top: 50px;
+    text-shadow: #17153B 0 0 10px;
 }
 
 .text-box h1{

@@ -69,7 +69,7 @@
 
     <!-- Footer -->
     <div class="footer">
-      <p>Website v1.3.0</p>
+      <p>Website v1.4.1</p>
     </div>
   </body>
 </html>
