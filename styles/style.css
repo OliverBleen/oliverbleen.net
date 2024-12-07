@@ -4,13 +4,13 @@
 }
 
 body{
-    background-color: #17153B;
+    background-color: var(--main-background-color);
 }
 
 .header{
     min-height: 90vh;
     width: 100%;
-    background-color: #17153B;
+    background-color: var(--main-background-color);
     position: relative;
 }
 
@@ -37,12 +37,12 @@ body{
 
 .text-box{
     width: 100%;
-    color: #FFFFFF;
+    color: var(--white);
     position: absolute;
     text-align: center;
     font-family: Arial;
     top: 50px;
-    text-shadow: #17153B 0 0 10px;
+    text-shadow: var(--main-background-color) 0 0 10px;
 }
 
 .text-box h1{
@@ -53,7 +53,7 @@ body{
 .text-box p{
     margin: 10px 0 40px;
     font-size: 30px;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 @media (max-width: 600px) or (max-height: 600px){

@@ -1,17 +1,17 @@
 .link-container a:link { /* Normal unvisited link */
-    color: #867BFF;
+    color: var(--link-normal);
 }
 
 .link-container a:visited { /* Normal visited link */
-    color: #867BFF;
+    color: var(--link-normal);
 }
 
 .link-container a:hover { /* link while hovered over */
-    color: #A9A1FF;
+    color: var(--link-hover);
 }
 
 .link-container a:active { /* link while clicked */
-    color: #444DFF;
+    color: var(--link-active);
 }
 
 .link-container img {

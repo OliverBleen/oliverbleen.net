@@ -1,0 +1,16 @@
+:root {
+    --white: #FFFFFF;
+    --main-background-color: #17153B;
+
+    --accent-dark:  #2E236C; /* Darkest accent color, lighter then background
+                                Used for topnav background */
+    --accent-light: #433D8B; /* Lighter accent color
+                                Used for topnav 'current active page' */
+    --accent-hover: #C8ACD6; /* Hover accent color
+                                Used for topnav links while hovering */
+
+    --link-normal: #867BFF; /* Used for normal visited and unvisited links */
+    --link-hover:  #A9A1FF; /* While hovering over a link */
+    --link-active: #444DFF; /* While the link is active (while holding mouse down) */
+
+}
