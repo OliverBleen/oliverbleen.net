@@ -1,0 +1,28 @@
+.text-box table {
+    border: 2px solid;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.text-box th, td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+.text-box th {
+    font-size: 40px;
+}
+
+.text-box td {
+    font-size: 30px;
+}
+
+
+@media (max-width: 600px) or (max-height: 600px){
+    .text-box th {
+        font-size: 30px;
+    }
+    .text-box td {
+        font-size: 20px;
+    }
+}
