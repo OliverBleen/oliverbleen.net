@@ -11,10 +11,10 @@ jobs:
     
     steps:
       - name: Checkout
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: SFTP Upload
-      - uses: Dylan700/sftp-upload-action@latest
+        uses: Dylan700/sftp-upload-action@latest
         with:
           server: ${{secrets.SFTP_URL}}
           username: ${{secrets.SFTP_USERNAME}}
