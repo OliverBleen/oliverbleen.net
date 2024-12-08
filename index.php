@@ -35,6 +35,7 @@
 <html>
   <head>
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/colors.css">
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
     <link rel="stylesheet" type="text/css" href="/styles/topnav.css">
     <link rel="stylesheet" type="text/css" href="/styles/footer.css">
@@ -50,8 +51,9 @@
     <div class="text-box">
       <h1>Oliver Bleen</h1>
       <p>
-        Welcome stranger :3
-        <br>This site is just a hobby I've been working on, and is still under construction >w<
+        Hi! I'm Oliver, a <a id="ageText">[YEAR]</a> y/o furry from Austria ^^<br>
+        Feel free to look around a bit :3<br>
+        (Also, this site is just a hobby and not everything is finished yet >w<)
       </p>
     </div>
 
@@ -69,7 +71,32 @@
 
     <!-- Footer -->
     <div class="footer">
-      <p>Website v1.4.2</p>
+      <p>Website v1.5.0</p>
     </div>
+
+
+    <script>
+     function calculateAge(birthday) {
+      const nowDate = new Date(Date.now());
+
+      if (nowDate.getMonth() > birthday.getMonth()) {
+        return nowDate.getFullYear() - birthday.getFullYear();
+      }
+      else if (nowDate.getMonth() == birthday.getMonth()) {
+        if(nowDate.getDate() < birthday.getDate()) {
+          return nowDate.getFullYear() - birthday.getFullYear() - 1;
+        }
+      }
+      else if (nowDate.getMonth() < birthday.getMonth()) {
+        return nowDate.getFullYear() - birthday.getFullYear() - 1;
+      }
+      return nowDate.getFullYear() - birthday.getFullYear();
+    }
+    //Birthday: 2005 MAY 11
+    //Note: Months in new Date(...) are zero based
+    document.getElementById("ageText").innerHTML = calculateAge(new Date(2005, 04, 11));
+    </script>
+
+
   </body>
 </html>
