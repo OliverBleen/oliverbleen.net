@@ -4,26 +4,26 @@ on:
   push:
     tags:
       - 'v*'
-
+      
 jobs:
-  coverage:
+  web-deploy:
     runs-on: ubuntu-latest
     
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: SFTP Upload
-        uses: Dylan700/sftp-upload-action@latest
+      - name: FTPS Upload
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{secrets.SFTP_URL}}
           username: ${{secrets.SFTP_USERNAME}}
           password: ${{secrets.SFTP_PASSWORD}}
-          port: 21
-          uploads: |
-            ./README.md => ./wwwroot/README.md
-          ignore: |
-            *.github
-            *.git
+          protocol: ftps
+          server-dir: /wwwroot/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            README.md
             LICENSE
         
