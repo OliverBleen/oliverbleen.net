@@ -1,0 +1,29 @@
+name: deploy-oliverbleen.net
+
+on:
+  push:
+    tags:
+      - 'v*'
+      
+jobs:
+  web-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: FTPS Upload
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{secrets.SFTP_URL}}
+          username: ${{secrets.SFTP_USERNAME}}
+          password: ${{secrets.SFTP_PASSWORD}}
+          protocol: ftps
+          server-dir: /wwwroot/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            README.md
+            LICENSE
+        
