@@ -7,7 +7,7 @@
 <!-- Well, I don't think I have anything more to say, thanks for reading this. Here, have a cookie:  🍪 -->
 
 <?php
-  session_start();
+  /*session_start();
   $counter_name = '/home/WH540322993/wwwroot/VisitsCounter-Index.txt';
 
   // Check if a text file exists. If not create one and initialize it to zero.
@@ -29,7 +29,7 @@
     fwrite($f, $counterVal);
     fclose($f);
   }
-  $_SESSION['visited'] = true;
+  $_SESSION['visited'] = true;*/
 ?>
 
 <html>
@@ -71,7 +71,7 @@
 
     <!-- Footer -->
     <div class="footer">
-      <p>Website v1.5.0</p>
+      <p>Website v1.6.0</p>
     </div>
 
 
