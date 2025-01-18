@@ -1,4 +1,9 @@
 :root {
+
+    /*==========================*/
+    /*==========Colors==========*/
+    /*==========================*/
+
     --white: #FFFFFF;
     --main-background-color: #17153B;
 
@@ -13,4 +18,26 @@
     --link-hover:  #A9A1FF; /* While hovering over a link */
     --link-active: #444DFF; /* While the link is active (while holding mouse down) */
 
+
+    /*=========================*/
+    /*==========Fonts==========*/
+    /*=========================*/
+
+    --font-paragraph: BeepSans;
+    --font-heading1: BeepSans;
+    --font-topnav: BeepSans;
 }
+
+@font-face {
+    font-family: BeepSans;
+    src: url(../fonts/Beep-Regular.otf);
+}
+@font-face {
+    font-family: BeepSans-Bold;
+    src: url(../fonts/Beep-Bold.otf);
+}
+
+
+
+
+
