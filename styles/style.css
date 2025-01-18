@@ -40,7 +40,7 @@ body{
     color: var(--white);
     position: absolute;
     text-align: center;
-    font-family: Arial;
+    font-family: var(--font-paragraph);
     top: 50px;
     text-shadow: var(--main-background-color) 0 0 10px;
 }

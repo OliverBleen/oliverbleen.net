@@ -6,7 +6,7 @@
 .topnav {
     background-color: var(--accent-dark);
     overflow: hidden;
-    font-family: Arial;
+    font-family: var(--font-topnav);
 }
 
 .topnav a {

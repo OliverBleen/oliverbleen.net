@@ -32,7 +32,7 @@
 <html>
   <head>
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/styles/colors.css">
+    <link rel="stylesheet" type="text/css" href="/styles/variables.css">
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
     <link rel="stylesheet" type="text/css" href="/styles/topnav.css">
     <link rel="stylesheet" type="text/css" href="/styles/links.css">
