@@ -65,6 +65,11 @@
         <h2>Fursuit Glasses</h2>
         <img src="files/render_glasses.png"></img>
         <p>Because I wanted to have some sort of accessory for my fursuit, I designed and 3D-Printed these fursuit glasses.</p>
+        <p class="link-container">Files:
+          <a href="files/fursuit_glasses_frame.stl">STL (Frame)</a>,
+          <a href="files/fursuit_glasses_earpiece.stl">STL (Earpiece)</a>,
+          <a href="files/fursuit_glasses_frame.stp">STEP (Frame)</a>,
+          <a href="files/fursuit_glasses_earpiece.stp">STEP (Earpiece)</a></p>
       </div>
       <div id="Fursuit_Stand" class="image-height-limited">
         <h2>Fursuit Stand</h2>
