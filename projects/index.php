@@ -76,8 +76,40 @@
         <img src="files/render_stand.png"></img>
       </div>
       <div id="3D_Printer_Bootscreen" class="image-width-limited">
-        <h2>3d Printer Bootscreen</h2>
+        <h2>3D Printer Bootscreen</h2>
         <img src="files/3d_printer_bootscreen.png" class="pixelated"></img>
+        <img src="files/3d_printer_bootscreen_irl.png"></img>
+        <p class="link-container">For my 3D printer, I compiled and flashed a custom build of <a href="https://marlinfw.org/">Marlin</a>. One of the changes I made was this custom bootscreen that shows up every time the printer starts</p>
+        <p class="sidenote">Sidenote: If you add a custom bootscreen to Marlin, normally the Marlin bootscreen shows
+          as well. If you want to only show you custom bootscren you need to do the following things (For Marlin v2.1.2.2):</br>
+          Define both <a class="code">SHOW_BOOTSCREEN</a> and <a class="code">SHOW_CUSTOM_BOOTSCREEN</a> (<a class="code">Marlin/Configuration.h</a>, Line 80):
+        </p>
+
+        <p class="code sidenote">
+          <a class="comment">// Show the Marlin bootscreen on startup. ** ENABLE FOR PRODUCTION **</a></br>
+          <a class="define">#define SHOW_BOOTSCREEN</a></br>
+          </br>
+          <a class="comment">// Show the bitmap in Marlin/_Bootscreen.h on startup.</a></br>
+          <a class="define">#define SHOW_CUSTOM_BOOTSCREEN</a></br>
+        </p>
+
+        <p class="sidenote">Then, in the file <a class="code">Marlin/src/lcd/dogm/marlinui_DOGM.cpp</a>, Line 247, you have to change the function:</p>
+        <p class="code sidenote">
+          <a class="type">void</a> <a class="class">MarlinUI</a>::<a class="method">show_bootscreen</a><a class="parenthesis">() {</a></br>
+          &nbsp&nbsp<a class="method">TERN_</a><a class="parenthesis">(</a><a class="define">SHOW_CUSTOM_BOOTSCREEN</a>, <a class="method">show_custom_bootscreen</a><a class="parenthesis">())</a>;</br>
+          &nbsp&nbsp<a class="method">show_marlin_bootscreen</a><a class="parenthesis">()</a>;</br>
+          <a class="parenthesis">}</a>
+        </p>
+
+        <p class="sidenote">to:</p>
+        <p class="code sidenote">
+          <a class="type">void</a> <a class="class">MarlinUI</a>::<a class="method">show_bootscreen</a><a class="parenthesis">() {</a></br>
+          &nbsp&nbsp<a class="comment">//TERN_(SHOW_CUSTOM_BOOTSCREEN, show_custom_bootscreen());</a></br>
+          &nbsp&nbsp<a class="method">show_custom_bootscreen</a><a class="parenthesis">()</a>;</br>
+          &nbsp&nbsp<a class="comment">//show_marlin_bootscreen();</a></br>
+          <a class="parenthesis">}</a>
+        </p>
+
       </div>
     </div>
 
