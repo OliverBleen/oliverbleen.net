@@ -80,6 +80,14 @@ body{
     border-radius: 25px;    /* Rounded corners */
 }
 
+p.code.sidenote{
+    font-size: 20px;
+}
+
+a.code.sidenote{
+    font-size: 20px;
+}
+
 .code .comment      { color: var(--code-comment); }
 .code .define       { color: var(--code-define); }
 .code .type         { color: var(--code-type); }
