@@ -45,7 +45,7 @@
   </head>
   <body>
     <div class="background-image">
-        <img src=/images/oliver.png alt="Cute fursuit picture">
+        <img src=/images/oliver_highres .png alt="Cute fursuit picture">
     </div>
 
     <div class="text-box">
@@ -71,7 +71,7 @@
 
     <!-- Footer -->
     <div class="footer">
-      <p>Website v1.6.1</p>
+      <p>Website v1.6.2</p>
     </div>
 
 
