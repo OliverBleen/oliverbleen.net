@@ -45,7 +45,7 @@
   </head>
   <body>
     <div class="background-image">
-        <img src=/images/oliver_highres .png alt="Cute fursuit picture">
+        <img src=/images/oliver_highres.png alt="Cute fursuit picture">
     </div>
 
     <div class="text-box">
