@@ -46,12 +46,12 @@
       <p class="link-container">
         <img src="/logos/Bluesky.svg"></img>
         🔞 BlueSky:
-        <a href="https://bsky.app/profile/ad.oliverbleen.net">@ad.oliverbleen.net</a>
+        <a href="https://bsky.app/profile/ad.oliverbleen.net" class="ico-link-external" target="_blank">@ad.oliverbleen.net</a>
       </p>
       <p class="link-container">
         <img src="/logos/Twitter.svg"></img>
         🔞 Twitter:
-        <a href="https://twitter.com/PaddedOlli">@PaddedOlli</a>
+        <a href="https://twitter.com/PaddedOlli" class="ico-link-external" target="_blank">@PaddedOlli</a>
       </p>
     </div>
 
@@ -60,7 +60,7 @@
       <a href="/links">Links</a>
       <a href="/fursonas">Fursonas</a>
       <a href="/projects">Projects</a>
-      <a href="https://github.com/OliverBleen/oliverbleen.net">Code</a>
+      <a href="https://github.com/OliverBleen/oliverbleen.net" class="ico-link-external ico-link-external-dark-on-hover" target="_blank">Code</a>
       <a href="javascript:void(0);" class="icon" onclick="openTopNav()">
         <i class="ico ico-burger-menu"></i>
             &NonBreakingSpace;

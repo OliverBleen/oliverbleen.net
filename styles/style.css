@@ -56,6 +56,21 @@ body{
     color: var(--white);
 }
 
+.ico-link-external:after{
+    background-image: url(/icon/external-link.svg);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    content:"";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-left: 2px;
+}
+.ico-link-external-dark-on-hover:hover:after{
+    background-image: url(/icon/external-link-dark.svg);
+}
+
 @media (max-width: 600px) or (max-height: 600px){
     .text-box h1{
         font-size: 30px;
