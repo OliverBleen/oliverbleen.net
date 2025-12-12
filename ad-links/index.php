@@ -43,15 +43,8 @@
   <body>
     <div class="text-box">
       <h1>🔞 AD 🔞</h1>
-      <p class="link-container">
-        <img src="/logos/Bluesky.svg"></img>
-        🔞 BlueSky:
-        <a href="https://bsky.app/profile/ad.oliverbleen.net" class="ico-link-external" target="_blank">@ad.oliverbleen.net</a>
-      </p>
-      <p class="link-container">
-        <img src="/logos/Twitter.svg"></img>
-        🔞 Twitter:
-        <a href="https://twitter.com/PaddedOlli" class="ico-link-external" target="_blank">@PaddedOlli</a>
+      <p>
+        You'll have to ask nicely for that :3
       </p>
     </div>
 
