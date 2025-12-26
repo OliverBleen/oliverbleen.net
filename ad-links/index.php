@@ -31,6 +31,7 @@
 
 <html>
   <head>
+    <meta name="robots" content="noindex">
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/styles/variables.css">
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
