@@ -115,14 +115,14 @@
 
         <p class="sidenote">
           (you can leave out the comments)</br>
-          Now, only the custom bootscreen will show up. But, it seems to display way too long (~5 seconds).</br>
+          Now, only the custom bootscreen will show up. But, at least for me, it seems to display way too long (~5 seconds).</br>
           To fix this, I changed both the <a class="code sidenote">BOOTSCREEN_TIMEOUT</a> and the <a class="code sidenote">CUSTOM_BOOTSCREEN_TIMEOUT</a>
         </p>
         <p class="sidenote">
           <a class="code sidenote">#define BOOTSCREEN_TIMEOUT 250 // (ms) Total Duration to display the boot screen(s)</a> (File: <a class="code sidenote">Marlin/Configuration_adv.h</a>, Line 1442)
         </p>
         <p class="sidenote">
-          <a class="code sidenote">#define CUSTOM_BOOTSCREEN_TIMEOUT 250</a> File: <a class="code sidenote">Marlin/src/lcd/dogm/marlinui_DOGM.cpp</a>, Line 172)<
+          <a class="code sidenote">#define CUSTOM_BOOTSCREEN_TIMEOUT 250</a> File: <a class="code sidenote">Marlin/src/lcd/dogm/marlinui_DOGM.cpp</a>, Line 172)
         </p>
         <p class="sidenote">
           (Despite what the comment in <a class="code sidenote">BOOTSCREEN_TIMEOUT</a> says, from testing it seems that these two timeouts add up. Also, I haven't tried to set one of the Timeouts to 0, as I thought that that might break some stuff.)</br>
