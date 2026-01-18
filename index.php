@@ -45,7 +45,7 @@
   </head>
   <body>
     <div class="background-image">
-        <img src=/images/oliver.png alt="Cute fursuit picture">
+        <img src=/images/oliver_highres.png alt="Cute fursuit picture">
     </div>
 
     <div class="text-box">
@@ -62,7 +62,7 @@
       <a href="/links">Links</a>
       <a href="/fursonas">Fursonas</a>
       <a href="/projects">Projects</a>
-      <a href="https://github.com/OliverBleen/oliverbleen.net">Code</a>
+      <a href="https://github.com/OliverBleen/oliverbleen.net" class="ico-link-external ico-link-external-dark-on-hover" target="_blank">Code</a>
       <a href="javascript:void(0);" class="icon" onclick="openTopNav()">
         <i class="ico ico-burger-menu"></i>
             &NonBreakingSpace;
@@ -71,7 +71,7 @@
 
     <!-- Footer -->
     <div class="footer">
-      <p>Website v1.6.0</p>
+      <p>Website v1.6.5</p>
     </div>
 
 

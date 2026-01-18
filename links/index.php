@@ -46,22 +46,22 @@
       <p class="link-container">
         <img src="/logos/Bluesky.svg"></img>
         BlueSky:
-        <a href="https://bsky.app/profile/oliverbleen.net">@oliverbleen.net</a>
+        <a href="https://bsky.app/profile/oliverbleen.net" class="ico-link-external" target="_blank">@oliverbleen.net</a>
       </p>
       <p class="link-container">
         <img src="/logos/Bluesky.svg"></img>
         BlueSky (TheStairs):
-        <a href="https://bsky.app/profile/thestairs.oliverbleen.net">@thestairs.oliverbleen.net</a>
+        <a href="https://bsky.app/profile/thestairs.oliverbleen.net" class="ico-link-external" target="_blank">@thestairs.oliverbleen.net</a>
       </p>
       <p class="link-container">
         <img src="/logos/Twitter.svg"></img>
         Twitter:
-        <a href="https://twitter.com/OliverBleen">@OliverBleen</a>
+        <a href="https://twitter.com/OliverBleen" class="ico-link-external" target="_blank">@OliverBleen</a>
       </p>
       <p class="link-container">
         <img src="/logos/Telegram.svg"></img>
         Telegram:
-        <a href="https://t.me/OliverBleen">@OliverBleen</a>
+        <a href="https://t.me/OliverBleen" class="ico-link-external" target="_blank">@OliverBleen</a>
       </p>
       <p class="link-container">
         <a href="/ad-links/18-plus-verify.php">🔞 AD Links 🔞</a>
@@ -73,7 +73,7 @@
       <a href="/links" class="active">Links</a>
       <a href="/fursonas">Fursonas</a>
       <a href="/projects">Projects</a>
-      <a href="https://github.com/OliverBleen/oliverbleen.net">Code</a>
+      <a href="https://github.com/OliverBleen/oliverbleen.net" class="ico-link-external ico-link-external-dark-on-hover" target="_blank">Code</a>
       <a href="javascript:void(0);" class="icon" onclick="openTopNav()">
         <i class="ico ico-burger-menu"></i>
             &NonBreakingSpace;
