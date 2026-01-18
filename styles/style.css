@@ -50,8 +50,13 @@ body{
     padding: 20px;
 }
 
-.text-box p{
-    margin: 10px 0 40px;
+.text-box h2{
+    font-size: 50px;
+    padding: 15px;
+}
+
+.text-box p:not(.code){
+    margin: 10px 20px 40px 20px;
     font-size: 30px;
     color: var(--white);
 }
@@ -71,11 +76,50 @@ body{
     background-image: url(/icon/external-link-dark.svg);
 }
 
+.text-box p.sidenote{
+    font-size: 25px;
+}
+
+.code {
+    margin: 10px auto 40px auto;
+    padding: 10px;
+    font-family: var(--font-code);
+    text-shadow: unset;
+    color: var(--code-default);
+    background-color: var(--code-background);
+    text-align: left;
+    width: fit-content;
+    max-width: 95%;
+    overflow: scroll;       /* Scroll when text doesn't fit */
+    white-space: nowrap;    /* Do not wrap text */
+    border-radius: 25px;    /* Rounded corners */
+}
+
+p.code.sidenote{
+    font-size: 20px;
+}
+
+a.code.sidenote{
+    font-size: 20px;
+}
+
+.code .comment      { color: var(--code-comment); }
+.code .define       { color: var(--code-define); }
+.code .type         { color: var(--code-type); }
+.code .keyword      { color: var(--code-keyword); }
+.code .parenthesis  { color: var(--code-parenthesis); }
+.code .method       { color: var(--code-method); }
+.code .class        { color: var(--code-class); }
+.code .string       { color: var(--code-string); }
+
 @media (max-width: 600px) or (max-height: 600px){
     .text-box h1{
         font-size: 30px;
     }
     .text-box p{
         font-size: 20px;
+    }
+    .text-box .sidenote{
+        font-size: 15px;
     }
 }

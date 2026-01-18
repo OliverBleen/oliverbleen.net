@@ -19,6 +19,18 @@
     --link-active: #444DFF; /* While the link is active (while holding mouse down) */
 
 
+    --code-background: #222222; /* The background of the code */
+    --code-default: #FFFFFF; /* Used for code when no color is specified */
+    --code-comment: #00AA00; /* Used for code comments */
+    --code-define: #BB55BB; /* Used for #defines */
+    --code-type: #5555BB; /* Used for types (i.e. "string", "int", "double", ... */
+    --code-keyword: #C586C0; /* Used for language keywords (i.e. "if", "for", "return", ...) */
+    --code-parenthesis: #C26FD6; /* Used for parenthesis (i.e. "{", "(", ")", "}", ...) */
+    --code-method: #DCDC9D; /* Used for method names */
+    --code-class: #46C9B0; /* Used for class and namespace names */
+    --code-string: #CE9178; /* Used for strings */
+
+
     /*=========================*/
     /*==========Fonts==========*/
     /*=========================*/
@@ -26,6 +38,7 @@
     --font-paragraph: BeepSans;
     --font-heading1: BeepSans;
     --font-topnav: BeepSans;
+    --font-code: Neon;
 }
 
 @font-face {
@@ -37,7 +50,10 @@
     src: url(../fonts/Beep-Bold.otf);
 }
 
-
+@font-face {
+    font-family: Neon;
+    src: url(../fonts/MonaspaceNeon-Regular.otf);
+}
 
 
 

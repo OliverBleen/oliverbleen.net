@@ -1,0 +1,17 @@
+.pixelated {
+    image-rendering: pixelated;
+}
+
+
+.projects img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.projects .image-width-limited img {
+    width: 500px;
+}
+
+.projects .image-height-limited img {
+    height: 500px;
+}
