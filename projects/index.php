@@ -42,18 +42,6 @@
     <title>Oliver Bleen - Projects</title>
   </head>
   <body>
-    <div class ="topnav" id="TopNav">
-      <a href="/">Home</a>
-      <a href="/links">Links</a>
-      <a href="/fursonas">Fursonas</a>
-      <a href="/projects" class="active">Projects</a>
-      <a href="https://github.com/OliverBleen/oliverbleen.net" class="ico-link-external ico-link-external-dark-on-hover" target="_blank">Code</a>
-      <a href="javascript:void(0);" class="icon" onclick="openTopNav()">
-        <i class="ico ico-burger-menu"></i>
-            &NonBreakingSpace;
-      </a>
-    </div>
-
     <div class="text-box projects">
       <div id="Table_of_contents">
         <h1>Projects</h1>
@@ -64,6 +52,18 @@
         <h2 class="link-container"><a href="3d-printer-bootscreen">3D Printer Bootscreen</a></h2>
         <img src="3d-printer-bootscreen/files/3d_printer_bootscreen_irl.png"></img>
       </div>
+    </div>
+
+    <div class ="topnav" id="TopNav">
+      <a href="/">Home</a>
+      <a href="/links">Links</a>
+      <a href="/fursonas">Fursonas</a>
+      <a href="/projects" class="active">Projects</a>
+      <a href="https://github.com/OliverBleen/oliverbleen.net" class="ico-link-external ico-link-external-dark-on-hover" target="_blank">Code</a>
+      <a href="javascript:void(0);" class="icon" onclick="openTopNav()">
+        <i class="ico ico-burger-menu"></i>
+            &NonBreakingSpace;
+      </a>
     </div>
 
   </body>
