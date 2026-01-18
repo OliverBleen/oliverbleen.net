@@ -46,10 +46,13 @@
       <div id="Table_of_contents">
         <h1>Projects</h1>
         <h2 class="link-container"><a href="fursuit-glasses">Fursuit Glasses</a></h2>
+        <p>3D-printed glasses for my fursuit!</p>
         <img src="fursuit-glasses/files/render_glasses.png"></img>
         <h2 class="link-container"><a href="fursuit-drying-stand">Fursuit Drying Stand</a></h2>
+        <p>Self explanatory, right?</p>
         <img src="fursuit-drying-stand/files/render_stand.png"></img>
         <h2 class="link-container"><a href="3d-printer-bootscreen">3D Printer Bootscreen</a></h2>
+        <p>Custom bootscreen for my Anet A8 Plus</p>
         <img src="3d-printer-bootscreen/files/3d_printer_bootscreen_irl.png"></img>
       </div>
     </div>
