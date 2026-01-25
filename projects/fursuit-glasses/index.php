@@ -44,20 +44,16 @@
   <body>
     <div class="text-box projects">
       <div id="Table_of_contents">
-        <h1>Projects</h1>
-        <h2 class="link-container"><a href="tip">T.I.P</a></h2>
-        <p>Get a small reminder of the event</p>
-        <img src="tip/files/printout_example.png"></img>
-        <h1>Projects</h1>
-        <h2 class="link-container"><a href="fursuit-glasses">Fursuit Glasses</a></h2>
-        <p>3D-printed glasses for my fursuit!</p>
-        <img src="fursuit-glasses/files/render_glasses.png"></img>
-        <h2 class="link-container"><a href="fursuit-drying-stand">Fursuit Drying Stand</a></h2>
-        <p>Self explanatory, right?</p>
-        <img src="fursuit-drying-stand/files/render_stand.png"></img>
-        <h2 class="link-container"><a href="3d-printer-bootscreen">3D Printer Bootscreen</a></h2>
-        <p>Custom bootscreen for my Anet A8 Plus</p>
-        <img src="3d-printer-bootscreen/files/3d_printer_bootscreen_irl.png"></img>
+        <h1 class="link-container"><a href="../">Projects</a> / Fursuit Glasses</h1>
+      </div>
+      <div id="Fursuit_Glasses" class="image-width-limited">
+        <img src="files/render_glasses.png"></img>
+        <p>Because I wanted to have some sort of accessory for my fursuit, I designed and 3D-Printed these fursuit glasses.</p>
+        <p class="link-container sidenote">Files:
+          <a href="files/fursuit_glasses_frame.stl">STL (Frame)</a>,
+          <a href="files/fursuit_glasses_earpiece.stl">STL (Earpiece)</a>,
+          <a href="files/fursuit_glasses_frame.stp">STEP (Frame)</a>,
+          <a href="files/fursuit_glasses_earpiece.stp">STEP (Earpiece)</a></p>
       </div>
     </div>
 
