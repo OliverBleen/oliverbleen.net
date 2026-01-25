@@ -48,7 +48,6 @@
         <h2 class="link-container"><a href="tip">T.I.P</a></h2>
         <p>Get a small reminder of the event</p>
         <img src="tip/files/printout_example.png"></img>
-        <h1>Projects</h1>
         <h2 class="link-container"><a href="fursuit-glasses">Fursuit Glasses</a></h2>
         <p>3D-printed glasses for my fursuit!</p>
         <img src="fursuit-glasses/files/render_glasses.png"></img>
