@@ -4,7 +4,7 @@
 <!-- Look at the HTML for the Home page for a bit more text ^w^ -->
 
 <?php
-  session_start();
+  /*session_start();
   $counter_name = '/home/WH540322993/wwwroot/VisitsCounter-Links.txt';
 
   // Check if a text file exists. If not create one and initialize it to zero.
@@ -26,7 +26,7 @@
     fwrite($f, $counterVal);
     fclose($f);
   }
-  $_SESSION['visited'] = true;
+  $_SESSION['visited'] = true;*/
 ?>
 
 <html>
@@ -46,22 +46,27 @@
       <p class="link-container">
         <img src="/logos/Bluesky.svg"></img>
         BlueSky:
-        <a href="https://bsky.app/profile/oliverbleen.net" class="ico-link-external" target="_blank">@oliverbleen.net</a>
+        <a href="https://bsky.app/profile/oliverbleen.net" class="ico-link-external-normal" target="_blank">@oliverbleen.net</a>
       </p>
       <p class="link-container">
         <img src="/logos/Bluesky.svg"></img>
         BlueSky (TheStairs):
-        <a href="https://bsky.app/profile/thestairs.oliverbleen.net" class="ico-link-external" target="_blank">@thestairs.oliverbleen.net</a>
+        <a href="https://bsky.app/profile/thestairs.oliverbleen.net" class="ico-link-external-normal" target="_blank">@thestairs.oliverbleen.net</a>
       </p>
       <p class="link-container">
         <img src="/logos/Twitter.svg"></img>
         Twitter:
-        <a href="https://twitter.com/OliverBleen" class="ico-link-external" target="_blank">@OliverBleen</a>
+        <a href="https://twitter.com/OliverBleen" class="ico-link-external-normal" target="_blank">@OliverBleen</a>
+      </p>
+      <p class="link-container">
+        <img src="/logos/Instagram.svg"></img>
+        Instagram:
+        <a href="https://www.instagram.com/oliver.bleen/" class="ico-link-external-normal" target="_blank">oliver.bleen</a>
       </p>
       <p class="link-container">
         <img src="/logos/Telegram.svg"></img>
         Telegram:
-        <a href="https://t.me/OliverBleen" class="ico-link-external" target="_blank">@OliverBleen</a>
+        <a href="https://t.me/OliverBleen" class="ico-link-external-normal" target="_blank">@OliverBleen</a>
       </p>
       <p class="link-container">
         <a href="/ad-links/18-plus-verify.php">🔞 AD Links 🔞</a>
