@@ -44,20 +44,13 @@
   <body>
     <div class="text-box projects">
       <div id="Table_of_contents">
-        <h1>Projects</h1>
-        <h2 class="link-container"><a href="tip">T.I.P</a></h2>
-        <p>Get a small reminder of the event</p>
-        <img src="tip/files/printout_example.png"></img>
-        <h1>Projects</h1>
-        <h2 class="link-container"><a href="fursuit-glasses">Fursuit Glasses</a></h2>
-        <p>3D-printed glasses for my fursuit!</p>
-        <img src="fursuit-glasses/files/render_glasses.png"></img>
-        <h2 class="link-container"><a href="fursuit-drying-stand">Fursuit Drying Stand</a></h2>
-        <p>Self explanatory, right?</p>
-        <img src="fursuit-drying-stand/files/render_stand.png"></img>
-        <h2 class="link-container"><a href="3d-printer-bootscreen">3D Printer Bootscreen</a></h2>
-        <p>Custom bootscreen for my Anet A8 Plus</p>
-        <img src="3d-printer-bootscreen/files/3d_printer_bootscreen_irl.png"></img>
+        <h1 class="link-container"><a href="../">Projects</a> / T.I.P</h1>
+      </div>
+      <div id="T_I_P">
+        <img src="files/printout_example.png"></img>
+        <p></p>
+        <p class="link-container sidenote">This site is still in progress, meanwhile, you can view the code on
+          <a href="https://github.com/OliverBleen/ThermalImagePrinter" class="ico-link-external-normal" target="_blank">GitHub</a></p>
       </div>
     </div>
 

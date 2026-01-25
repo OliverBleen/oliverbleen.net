@@ -72,8 +72,29 @@ body{
     background-size: 100%;
     margin-left: 2px;
 }
+
 .ico-link-external-dark-on-hover:hover:after{
     background-image: url(/icon/external-link-dark.svg);
+}
+
+.ico-link-external-normal:after{
+    background-image: url(/icon/external-link-normal.svg);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    content:"";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-left: 2px;
+}
+
+.ico-link-external-normal:hover:after{
+    background-image: url(/icon/external-link-hover.svg);
+}
+
+.ico-link-external-normal:active:after{
+    background-image: url(/icon/external-link-active.svg);
 }
 
 .text-box p.sidenote{

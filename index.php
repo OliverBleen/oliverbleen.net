@@ -71,7 +71,7 @@
 
     <!-- Footer -->
     <div class="footer">
-      <p>Website v1.7.1</p>
+      <p>Website v1.7.2</p>
     </div>
 
 
