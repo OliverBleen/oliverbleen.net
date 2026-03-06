@@ -45,28 +45,23 @@
       <h1>Links</h1>
       <p class="link-container">
         <img src="/logos/Bluesky.svg"></img>
-        BlueSky:
-        <a href="https://bsky.app/profile/oliverbleen.net" class="ico-link-external-normal" target="_blank">@oliverbleen.net</a>
+        <a href="https://bsky.app/profile/oliverbleen.net" class="ico-link-external-normal" target="_blank">Bluesky</a>
       </p>
       <p class="link-container">
         <img src="/logos/Bluesky.svg"></img>
-        BlueSky (TheStairs):
-        <a href="https://bsky.app/profile/thestairs.oliverbleen.net" class="ico-link-external-normal" target="_blank">@thestairs.oliverbleen.net</a>
+        <a href="https://bsky.app/profile/thestairs.oliverbleen.net" class="ico-link-external-normal" target="_blank">Bluesky (thestairs)</a>
       </p>
       <p class="link-container">
         <img src="/logos/Twitter.svg"></img>
-        Twitter:
-        <a href="https://twitter.com/OliverBleen" class="ico-link-external-normal" target="_blank">@OliverBleen</a>
+        <a href="https://twitter.com/OliverBleen" class="ico-link-external-normal" target="_blank">Twitter</a>
       </p>
       <p class="link-container">
         <img src="/logos/Instagram.svg"></img>
-        Instagram:
-        <a href="https://www.instagram.com/oliver.bleen/" class="ico-link-external-normal" target="_blank">oliver.bleen</a>
+        <a href="https://www.instagram.com/oliver.bleen/" class="ico-link-external-normal" target="_blank">Instagram</a>
       </p>
       <p class="link-container">
         <img src="/logos/Telegram.svg"></img>
-        Telegram:
-        <a href="https://t.me/OliverBleen" class="ico-link-external-normal" target="_blank">@OliverBleen</a>
+        <a href="https://t.me/OliverBleen" class="ico-link-external-normal" target="_blank">Telegram</a>
       </p>
       <p class="link-container">
         <a href="/ad-links/18-plus-verify.php">🔞 AD Links 🔞</a>
