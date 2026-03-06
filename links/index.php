@@ -64,6 +64,10 @@
         <a href="https://t.me/OliverBleen" class="ico-link-external-normal" target="_blank">Telegram</a>
       </p>
       <p class="link-container">
+      <img src="/logos/Furtrack.png"></img>
+      <a href="https://www.furtrack.com/user/OliverBleen" class="ico-link-external-normal" target="_blank">Furtrack</a>
+      </p>
+      <p class="link-container">
         <a href="/ad-links/18-plus-verify.php">🔞 AD Links 🔞</a>
       </p>
     </div>
