@@ -11,10 +11,10 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: FTPS Upload
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: https://github.com/SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{secrets.SFTP_URL}}
           username: ${{secrets.SFTP_USERNAME}}
