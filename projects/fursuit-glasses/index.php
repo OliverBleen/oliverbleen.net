@@ -50,10 +50,10 @@
         <img src="files/render_glasses.png"></img>
         <p>Because I wanted to have some sort of accessory for my fursuit, I designed and 3D-Printed these fursuit glasses.</p>
         <p class="link-container sidenote">Files:
-          <a href="files/fursuit_glasses_frame.stl">STL (Frame)</a>,
-          <a href="files/fursuit_glasses_earpiece.stl">STL (Earpiece)</a>,
-          <a href="files/fursuit_glasses_frame.stp">STEP (Frame)</a>,
-          <a href="files/fursuit_glasses_earpiece.stp">STEP (Earpiece)</a></p>
+          <a href="files/fursuit_glasses_frame.stl">Frame (STL)</a>,
+          <a href="files/fursuit_glasses_earpiece_v2.stl">Earpiece (STL)</a>,
+          <a href="files/fursuit_glasses_frame.stp">Frame (STEP)</a>,
+          <a href="files/fursuit_glasses_earpiece_v2.FCStd">Earpiece (FreeCAD)</a></p>
       </div>
     </div>
 
