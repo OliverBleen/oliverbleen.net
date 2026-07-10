@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="/styles/links.css">
     <link rel="icon" type="image/svg" href="/icon/favicon.svg">
     <script src="/scripts/topnav.js"></script>
-    <title>Oliver Bleen - Projects</title>
+    <title>Oliver Bleen - Projects - T.I.P</title>
   </head>
   <body>
     <div class="text-box projects">
