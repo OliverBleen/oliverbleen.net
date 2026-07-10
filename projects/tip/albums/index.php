@@ -21,6 +21,11 @@
       </div>
       <div>
         <?php
+          if(!isset($_GET['name'])) {
+            print '<p class="link-container">No album name was specified in the URL parameter.<br>Go back to the <a href="../gallery">gallery</a></p>';
+            goto end;
+          }
+
           $hostname = trim(file_get_contents('../../../../secrets/tip_api_hostname'));
           $api_key = trim(file_get_contents('../../../../secrets/tip_api_token'));
           $headers = [
