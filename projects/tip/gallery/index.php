@@ -31,11 +31,14 @@
 
 <script type="text/javascript">
   function iframeLoaded() {
-    console.log("On Iframe Loaded");
       var iFrameID = document.getElementById('iframe-albums-list');
       if(iFrameID) {
           iFrameID.width = document.body.scrollWidth;
-          iFrameID.height = iFrameID.contentWindow.document.body.children[0].scrollHeight + 51 + "px";
+          var newHeight = iFrameID.contentWindow.document.body.children[0].scrollHeight + 51 ;
+          if(newHeight > 600)
+            iFrameID.height = newHeight + "px";
+          else
+            iFrameID.height = "601px";
       }
   }
 </script>
@@ -64,7 +67,7 @@
                 //  the height with the small font, then set it to a height >600, so the content of the iframe
                 //  content would change to the big font again, leading to the div taking up more space and the
                 //  iframe scrollbar to be visible again ?>
-          <iframe src="albums-list.php" title="Albums list sub-view" id="iframe-albums-list" height="1000" onload="iframeLoaded()" frameBorder="0"></iframe>
+          <iframe src="albums-list.php" title="Albums list sub-view" id="iframe-albums-list" width="601" height="1000" onload="iframeLoaded()" frameBorder="0"></iframe>
       </div>
     </div>
 
