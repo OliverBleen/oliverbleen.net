@@ -36,18 +36,18 @@
           $server_output = curl_exec($ch);
 
           if($server_output === FALSE) {
-            print '<div class="text-box"><p>Error connecting to API... Sowwy &gt;w&lt;</p></div>';
+            print '<p>Error connecting to API... Sowwy &gt;w&lt;</p>';
             //print curl_error($ch);  // Don't print error for now
             return;
           }
 
           $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
           if($httpcode != 200) {
-            print '<div class="text-box"><p>';
+            print '<p>';
             print 'Error getting data from API: ' . $httpcode;
             print '<br>';
             print $server_output;
-            print '</p></div>';
+            print '</p>';
             return;
           }
 
