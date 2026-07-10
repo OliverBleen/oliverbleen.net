@@ -29,6 +29,17 @@
   $_SESSION['visited'] = true;*/
 ?>
 
+<script type="text/javascript">
+  function iframeLoaded() {
+    console.log("On Iframe Loaded");
+      var iFrameID = document.getElementById('iframe-albums-list');
+      if(iFrameID) {
+          iFrameID.width = document.body.scrollWidth;
+          iFrameID.height = iFrameID.contentWindow.document.body.children[0].scrollHeight + 51 + "px";
+      }
+  }
+</script>
+
 <html>
   <head>
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
@@ -39,19 +50,24 @@
     <link rel="stylesheet" type="text/css" href="/styles/links.css">
     <link rel="icon" type="image/svg" href="/icon/favicon.svg">
     <script src="/scripts/topnav.js"></script>
-    <title>Oliver Bleen - Projects</title>
+    <title>Oliver Bleen - Projects - T.I.P - Gallery</title>
   </head>
   <body>
     <div class="text-box projects">
       <div id="Table_of_contents">
-        <h1 class="link-container"><a href="../">Projects</a> / T.I.P</h1>
+        <h1 class="link-container"><a href="../../">Projects</a> / <a href="../">T.I.P</a> / Gallery</h1>
       </div>
       <div id="T_I_P">
-        <p class="link-container sidenote">This site is still in progress, meanwhile, you can browse the
-        <a href="gallery">gallery</a> or view the code on
+        <p></p>
+        <p class="link-container sidenote">This site is still in progress, meanwhile, you can view the code on
           <a href="https://github.com/OliverBleen/ThermalImagePrinter" class="ico-link-external-normal" target="_blank">GitHub</a></p>
-        <img src="files/printout_example.png"></img>
-
+          <?php // Important: Give the content of the iframe enough height to render with big font (here setting height to 1000),
+                //  because if height <600, then the small font is used (based on css rules).
+                //  If the small font were to be used first, the call to get the divs height (in the iframeLoaded() method) would return
+                //  the height with the small font, then set it to a height >600, so the content of the iframe
+                //  content would change to the big font again, leading to the div taking up more space and the
+                //  iframe scrollbar to be visible again ?>
+          <iframe src="albums-list.php" title="Albums list sub-view" id="iframe-albums-list" height="1000" onload="iframeLoaded()" frameBorder="0"></iframe>
       </div>
     </div>
 
@@ -66,6 +82,5 @@
             &NonBreakingSpace;
       </a>
     </div>
-
   </body>
 </html>
