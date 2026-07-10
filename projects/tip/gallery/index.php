@@ -58,9 +58,6 @@
         <h1 class="link-container"><a href="../../">Projects</a> / <a href="../">T.I.P</a> / Gallery</h1>
       </div>
       <div id="T_I_P">
-        <p></p>
-        <p class="link-container sidenote">This site is still in progress, meanwhile, you can view the code on
-          <a href="https://github.com/OliverBleen/ThermalImagePrinter" class="ico-link-external-normal" target="_blank">GitHub</a></p>
           <?php // Important: Give the content of the iframe enough height to render with big font (here setting height to 1000),
                 //  because if height <600, then the small font is used (based on css rules).
                 //  If the small font were to be used first, the call to get the divs height (in the iframeLoaded() method) would return

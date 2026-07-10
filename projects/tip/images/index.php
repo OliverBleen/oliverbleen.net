@@ -38,9 +38,8 @@
           if($server_output === FALSE) {
             print '<p>Error connecting to API... Sowwy &gt;w&lt;</p>';
             //print curl_error($ch);  // Don't print error for now
-            return;
+            goto end;
           }
-
           $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
           if($httpcode != 200) {
             print '<p>';
@@ -48,7 +47,7 @@
             print '<br>';
             print $server_output;
             print '</p>';
-            return;
+            goto end;
           }
 
           curl_close($ch);
@@ -58,6 +57,7 @@
           print '<p class="sidenote">Created: ' . str_replace('T', ' ', $image_metadata['timestampCreated']) . ' UTC</p>';
           print '<img src="' . $img_url . '">';
 
+          end:
         ?>
       </div>
     </div>

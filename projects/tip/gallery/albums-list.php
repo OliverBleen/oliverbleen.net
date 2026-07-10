@@ -30,7 +30,7 @@
       if($server_output === FALSE) {
         print '<div class="text-box"><p>Error connecting to API... Sowwy &gt;w&lt;</p></div>';
         //print curl_error($ch);  // Don't print error for now
-        return;
+        goto end;
       }
 
       $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
@@ -40,7 +40,7 @@
         print '<br>';
         print $server_output;
         print '</p></div>';
-        return;
+        goto end;
       }
 
       curl_close($ch);
@@ -62,6 +62,8 @@
         print '<p>No albums have been uploaded yet...<br>Check back later!</p>';
       }
       print '</div>';
+
+      end:
     ?>
   </body>
 </html>

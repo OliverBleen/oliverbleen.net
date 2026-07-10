@@ -37,7 +37,7 @@
           if($server_output === FALSE) {
             print '<p>Error connecting to API... Sowwy &gt;w&lt;</p>';
             //print curl_error($ch);  // Don't print error for now
-            return;
+            goto end;
           }
 
           $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
@@ -47,7 +47,7 @@
             print '<br>';
             print $server_output;
             print '</p>';
-            return;
+            goto end;
           }
 
           curl_close($ch);
@@ -61,7 +61,7 @@
 
           if(count($album['images'])  == 0) {
             print '<p>No images in this album...<br>You know, this shouldn&apos;t even happen x3</p>';
-            return;
+            goto end;
           }
           foreach($album['images'] as $image) {
             $img_url = $hostname . '/api/Images/Get/' . urlencode($image['id']);
@@ -74,9 +74,9 @@
             $img_meta_server_output = curl_exec($img_meta_ch);
 
             if($img_meta_server_output === FALSE) {
-              print '<p>Error connecting to API... Sowwy &gt;w&lt;</p>';
+              print '<div><p>Error connecting to API... Sowwy &gt;w&lt;</p></div>';
               //print curl_error($img_meta_ch);  // Don't print error for now
-              return;
+              goto end;
             }
 
             $img_meta_httpcode = curl_getinfo($img_meta_ch, CURLINFO_HTTP_CODE);
@@ -86,7 +86,7 @@
               print '<br>';
               print $img_meta_server_output;
               print '</p>';
-              return;
+              goto end;
             }
             curl_close($img_meta_ch);
             $metadata = json_decode($img_meta_server_output, true);
@@ -94,6 +94,8 @@
             print '<a href="../images?id=' .  $metadata['id'] . '"><img src="' . $img_url . '"></a>';
             //print $img_server_output;
           }
+
+          end:
         ?>
       </div>
     </div>
