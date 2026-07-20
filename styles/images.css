@@ -2,16 +2,16 @@
     image-rendering: pixelated;
 }
 
-
+/* 90vmin = 90% of the smaller dimension of the viewport */
 .projects img {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: min(90vmin, 500px);
+    max-height: min(90vmin, 500px);
 }
 
 .projects .image-width-limited img {
-    width: 500px;
+    width: min(90vmin, 500px);
 }
 
 .projects .image-height-limited img {
-    height: 500px;
+    height: min(90vmin, 500px);
 }

@@ -60,7 +60,7 @@
 
           print '<h3 class="link-container">Album: <a href="../albums?name=' . $image_metadata['albumTitle'] . '">' . $image_metadata['albumTitle'] . '</a></h3>';
           print '<p class="sidenote">Created: ' . str_replace('T', ' ', $image_metadata['timestampCreated']) . ' UTC</p>';
-          print '<img src="' . $img_url . '">';
+          print '<img class="screen-size-limit" src="' . $img_url . '">';
 
           end:
         ?>

@@ -133,6 +133,11 @@ img{
     margin: 5px;
 }
 
+.screen-size-limit {
+    max-height: 95vh !important;
+    max-width: 95vw !important;
+}
+
 .code .comment      { color: var(--code-comment); }
 .code .define       { color: var(--code-define); }
 .code .type         { color: var(--code-type); }
