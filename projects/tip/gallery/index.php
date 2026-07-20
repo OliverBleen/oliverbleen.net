@@ -41,6 +41,7 @@
             iFrameID.height = "601px";
       }
   }
+  window.addEventListener('resize', iframeLoaded);
 </script>
 
 <html>
