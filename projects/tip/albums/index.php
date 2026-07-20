@@ -69,34 +69,9 @@
             goto end;
           }
           foreach($album['images'] as $image) {
-            $img_url = $hostname . '/api/Images/Get/' . urlencode($image['id']);
-            $img_meta_url = $hostname . '/api/Images/GetMetadata/' . urlencode($image['id']);
-            $img_meta_ch = curl_init($img_meta_url);
+            $img_url = $hostname . '/api/Images/GetPreview/' . urlencode($image['id']);
 
-            curl_setopt($img_meta_ch, CURLOPT_RETURNTRANSFER, 1);  // Makes it so curl_exec returns
-            curl_setopt($img_meta_ch, CURLOPT_HTTPHEADER, $headers);
-
-            $img_meta_server_output = curl_exec($img_meta_ch);
-
-            if($img_meta_server_output === FALSE) {
-              print '<div><p>Error connecting to API... Sowwy &gt;w&lt;</p></div>';
-              //print curl_error($img_meta_ch);  // Don't print error for now
-              goto end;
-            }
-
-            $img_meta_httpcode = curl_getinfo($img_meta_ch, CURLINFO_HTTP_CODE);
-            if($img_meta_httpcode != 200) {
-              print '<p>';
-              print 'Error getting data from API: ' . $img_meta_httpcode;
-              print '<br>';
-              print $img_meta_server_output;
-              print '</p>';
-              goto end;
-            }
-            curl_close($img_meta_ch);
-            $metadata = json_decode($img_meta_server_output, true);
-
-            print '<a href="../images?id=' .  $metadata['id'] . '"><img src="' . $img_url . '"></a>';
+            print '<a href="../images?id=' .  $image['id'] . '"><img src="' . $img_url . '"></a>';
             //print $img_server_output;
           }
 
