@@ -1,0 +1,19 @@
+.loading-indicator-container {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+.loading-indicator-text {
+    border-radius: 10px;
+    margin-top: 100px;
+    width: 150px;
+    background: var(--loading-background);
+    box-shadow: 0px 0px 5px 10px var(--loading-background);
+    display: inline-block;
+}
+
+@media (max-width: 600px) or (max-height: 600px) {
+    .loading-indicator-text {
+        width: 100px;
+    }
+}

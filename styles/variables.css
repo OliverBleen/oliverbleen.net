@@ -14,6 +14,8 @@
     --accent-hover: #C8ACD6; /* Hover accent color
                                 Used for topnav links while hovering */
 
+    --loading-background: #273b87eb; /* Background color of loading indicator */
+
     --link-normal: #867BFF; /* Used for normal visited and unvisited links */
     --link-hover:  #A9A1FF; /* While hovering over a link */
     --link-active: #444DFF; /* While the link is active (while holding mouse down) */
