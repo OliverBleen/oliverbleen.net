@@ -36,6 +36,7 @@
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
     <link rel="stylesheet" type="text/css" href="/styles/topnav.css">
     <link rel="stylesheet" type="text/css" href="/styles/links.css">
+    <link rel="stylesheet" type="text/css" href="/styles/images.css">
     <link rel="icon" type="image/svg" href="/icon/favicon.svg">
     <script src="/scripts/topnav.js"></script>
     <title>Oliver Bleen - Links</title>
@@ -44,27 +45,27 @@
     <div class="text-box">
       <h1>Links</h1>
       <p class="link-container">
-        <img src="/logos/Bluesky.svg"></img>
+        <img class="site-logo" src="/logos/Bluesky.svg"></img>
         <a href="https://bsky.app/profile/oliverbleen.net" class="ico-link-external-normal" target="_blank">Bluesky</a>
       </p>
       <p class="link-container">
-        <img src="/logos/Bluesky.svg"></img>
+        <img class="site-logo" src="/logos/Bluesky.svg"></img>
         <a href="https://bsky.app/profile/thestairs.oliverbleen.net" class="ico-link-external-normal" target="_blank">Bluesky (thestairs)</a>
       </p>
       <p class="link-container">
-        <img src="/logos/Twitter.svg"></img>
+        <img class="site-logo" src="/logos/Twitter.svg"></img>
         <a href="https://twitter.com/OliverBleen" class="ico-link-external-normal" target="_blank">Twitter</a>
       </p>
       <p class="link-container">
-        <img src="/logos/Instagram.svg"></img>
+        <img class="site-logo" src="/logos/Instagram.svg"></img>
         <a href="https://www.instagram.com/oliver.bleen/" class="ico-link-external-normal" target="_blank">Instagram</a>
       </p>
       <p class="link-container">
-        <img src="/logos/Telegram.svg"></img>
+        <img class="site-logo" src="/logos/Telegram.svg"></img>
         <a href="https://t.me/OliverBleen" class="ico-link-external-normal" target="_blank">Telegram</a>
       </p>
       <p class="link-container">
-      <img src="/logos/Furtrack.png"></img>
+      <img class="site-logo" src="/logos/Furtrack.png"></img>
       <a href="https://www.furtrack.com/user/OliverBleen" class="ico-link-external-normal" target="_blank">Furtrack</a>
       </p>
       <p class="link-container">

@@ -13,13 +13,3 @@
 .link-container a:active { /* link while clicked */
     color: var(--link-active);
 }
-
-.link-container img {
-    height: 30px;
-}
-
-@media (max-width: 600px) or (max-height: 600px){
-    .link-container img {
-        height: 20px;
-    }
-}

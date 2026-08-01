@@ -15,3 +15,13 @@
 .projects .image-height-limited img {
     height: min(90vmin, 500px);
 }
+
+img.site-logo {
+    height: 30px;
+}
+
+@media (max-width: 600px) or (max-height: 600px){
+    img.site-logo {
+        height: 20px;
+    }
+}
