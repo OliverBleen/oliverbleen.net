@@ -16,11 +16,23 @@
     height: min(90vmin, 500px);
 }
 
+img.tip-small-preview {
+    width: 73px;
+    height: 100px;
+    object-fit: contain;
+}
+
 img.site-logo {
     height: 30px;
 }
 
 @media (max-width: 600px) or (max-height: 600px){
+    img.tip-small-preview {
+        width: 57px;
+        height: 78px;
+        object-fit: contain;
+    }
+
     img.site-logo {
         height: 20px;
     }

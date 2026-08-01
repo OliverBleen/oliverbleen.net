@@ -53,9 +53,12 @@
           print '<a href=../albums?name=' . urlencode($album['title']) . ' target="_top">' . '<h3 class="link-container">' . $album['title'] . '</h3>';
           print '<p class="sidenote">Images: ' . $album['imageCount'] . '<br>';
           print 'Created: ' . str_replace('T', ' ', $album['timestampCreated']) . '<br>';
-          print 'Last Update: ' . str_replace('T', ' ', $album['timestampLastUpdate']) . '</p>';
-          print '</a></div>';
-          print '<br>';
+          print 'Last Update: ' . str_replace('T', ' ', $album['timestampLastUpdate']) . '<br>';
+          foreach($album['albumPreviewImages'] as $image_id) {
+            $img_url = $hostname . '/api/Images/GetPreviewSmall/' . urlencode($image_id);
+            print '<img class="tip-small-preview" src="' . $img_url . '">';
+          }
+          print '</p></a></div>';
         }
       }
       else {
