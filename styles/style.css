@@ -129,10 +129,6 @@ a.code.sidenote{
     font-size: 20px;
 }
 
-img{
-    margin: 5px;
-}
-
 .screen-size-limit {
     max-height: 95vh !important;
     max-width: 95vw !important;

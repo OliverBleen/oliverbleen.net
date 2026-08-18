@@ -37,3 +37,11 @@ img.site-logo {
         height: 20px;
     }
 }
+
+img {
+    margin: 5px;
+}
+
+img.no-margin {
+    margin: 0px;
+}
