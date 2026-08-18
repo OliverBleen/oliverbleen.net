@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="/styles/images.css">
     <link rel="stylesheet" type="text/css" href="/styles/topnav.css">
     <link rel="stylesheet" type="text/css" href="/styles/links.css">
+    <link rel="icon" type="image/svg" href="/icon/favicon.svg">
     <script src="/scripts/topnav.js"></script>
     <title>Oliver Bleen - Projects - T.I.P - Gallery</title>
   </head>
